@@ -1,0 +1,48 @@
+.Header {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.Header.active {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+}
+.Header i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+.right_container {
+  display: flex;
+  align-items: center;
+}
+.right_container .profile {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  border-radius: 25px;
+  box-shadow: var(--shadow);
+  padding: 2px;
+  overflow: hidden;
+}
+.right_container .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.header_menu_icon {
+  display: none;
+}
+@media (max-width: 900px) {
+  .header_menu_icon {
+    display: block;
+  }
+}
